@@ -1,0 +1,16 @@
+<div>
+    <table>
+        <thead>
+            <td></td>
+            <th>Id</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dept of departments">
+                <td><button (click)="displayDetail(dept)">View</button></td>
+                <td>{{ dept.id }}</td>
+                <td>{{ dept.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
